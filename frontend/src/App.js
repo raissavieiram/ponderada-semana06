@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 
-const backend_url = process.env.BACKEND_URL
+const backend_url = process.env.REACT_APP_BACKEND_URL
 const fetchTarefas = async () => {
   const response = await axios.get(`${backend_url}/tasks`);
   return response.data;
