@@ -1,6 +1,6 @@
 # Sistema de Gerenciamento de Tarefas
 
-Este projeto é uma aplicação web que permite aos usuários criar, listar e gerenciar tarefas. A aplicação é dividida em um front-end que roda em uma instância EC2 da AWS e um back-end que se conecta a um banco de dados PostgreSQL hospedado em um serviço RDS da AWS.
+Este projeto é uma aplicação web que permite a criação, listagem e gerenciamento de tarefas. A aplicação é dividida em um front-end e um back-end que rodam em uma instância EC2 da AWS e um banco de dados PostgreSQL hospedado em um serviço RDS da AWS.
 
 ## Descrição
 
