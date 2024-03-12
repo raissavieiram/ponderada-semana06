@@ -11,5 +11,5 @@ const TaskRoutes = require("./routes/TaskRoutes");
 app.use(TaskRoutes);
 
 app.listen(process.env.PORT, () =>
-  console.log(`Servidor iniciado na ${process.env.BACKEND_URL}`)
+  console.log(`Servidor iniciado`)
 );

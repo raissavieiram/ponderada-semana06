@@ -1,19 +1,21 @@
 import React, { useState, useEffect } from 'react';
+require("dotenv").config();
 import axios from 'axios';
 import './App.css';
 
+const backend_url = process.env.BACKEND_URL
 const fetchTarefas = async () => {
-  const response = await axios.get('http://localhost:5500/tasks');
+  const response = await axios.get(`${backend_url}/tasks`);
   return response.data;
 };
 
 const createTarefa = async (tarefa) => {
-  const response = await axios.post('http://localhost:5500/tasks', tarefa);
+  const response = await axios.post(`${backend_url}/tasks`, tarefa);
   return response.data;
 };
 
 const updateTarefa = async (id, tarefa) => {
-  await axios.put(`http://localhost:5500/tasks/${id}`, tarefa);
+  await axios.put(`${backend_url}/tasks/${id}`, tarefa);
 };
 
 function App() {
